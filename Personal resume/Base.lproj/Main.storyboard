@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Personal_resume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeS-MS-FVd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="122.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SJt-PP-AWx">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                                    </imageView>
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSu-wT-X2c">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.5972348824" green="1" blue="0.39277401270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SJt-PP-AWx" secondAttribute="trailing" id="42E-7f-a4V"/>
+                                    <constraint firstAttribute="bottom" secondItem="xSu-wT-X2c" secondAttribute="bottom" id="AFm-iK-Mh2"/>
+                                    <constraint firstItem="SJt-PP-AWx" firstAttribute="leading" secondItem="xeS-MS-FVd" secondAttribute="leading" id="cft-0w-BTA"/>
+                                    <constraint firstItem="xSu-wT-X2c" firstAttribute="top" secondItem="xeS-MS-FVd" secondAttribute="top" id="gSH-Mp-hQ7"/>
+                                    <constraint firstAttribute="bottom" secondItem="SJt-PP-AWx" secondAttribute="bottom" id="lOR-si-Ssp"/>
+                                    <constraint firstItem="SJt-PP-AWx" firstAttribute="top" secondItem="xeS-MS-FVd" secondAttribute="top" id="oG4-9P-GF4"/>
+                                    <constraint firstAttribute="trailing" secondItem="xSu-wT-X2c" secondAttribute="trailing" id="sCl-cW-IKR"/>
+                                    <constraint firstItem="xSu-wT-X2c" firstAttribute="leading" secondItem="xeS-MS-FVd" secondAttribute="leading" id="z4V-zV-1Cz"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UP4-MR-Z8U">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="yBt-hp-cV6"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2jY-bM-PAs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xeS-MS-FVd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2H4-sC-Kgq"/>
+                            <constraint firstItem="xeS-MS-FVd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/2" id="7qK-fr-vWv"/>
+                            <constraint firstItem="UP4-MR-Z8U" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="8NV-uK-o3z"/>
+                            <constraint firstItem="UP4-MR-Z8U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Let-uS-CxB"/>
+                            <constraint firstItem="xeS-MS-FVd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bKE-rW-ZxA"/>
+                            <constraint firstItem="xeS-MS-FVd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/2" id="gUx-KL-Qdi"/>
+                            <constraint firstAttribute="bottom" secondItem="UP4-MR-Z8U" secondAttribute="bottom" id="utt-8Q-gDm"/>
+                            <constraint firstAttribute="trailing" secondItem="UP4-MR-Z8U" secondAttribute="trailing" id="vzx-Oe-9PT"/>
+                            <constraint firstAttribute="trailing" secondItem="xeS-MS-FVd" secondAttribute="trailing" id="xZp-UV-Qsj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7qK-fr-vWv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="coverImageView" destination="SJt-PP-AWx" id="ZHK-1F-bdQ"/>
+                        <outlet property="coverImageViewTop" destination="bKE-rW-ZxA" id="b2s-uz-d7C"/>
+                        <outlet property="maskView" destination="xSu-wT-X2c" id="8Pa-OI-ocZ"/>
+                        <outlet property="selfInfoTableView" destination="UP4-MR-Z8U" id="i5w-bC-pFt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322.5" y="298.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="122.jpg" width="532" height="300"/>
+    </resources>
+</document>
